@@ -1,0 +1,121 @@
+*{
+    font-family: "Special Elite", Helvetica;
+    width: 100%;
+    margin: auto;
+}
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    left: 0;
+    background-image: url(img/header.jpg);
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+header .logo{
+    width: 76px;
+    height: 76px;    
+    position: fixed;
+    top: 0;
+    left: 0;
+}   
+header h3{
+        width: 263px;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+header a{
+    color: #ffffff;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+header a:hover{
+    background-color: #73321a;
+    border-radius: 30px;
+}
+nav{
+    margin-top: 55px;
+    line-height: normal;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 450px;
+    margin-right: 40px;
+}
+nav ul li{
+    margin-left: 12px;
+}
+.cuadrado{
+    background-color:#d9965b;
+    height: 100vh;
+}
+.form{
+    display: flex;
+    display:inline-block;
+    width: 740px;
+    height: 445px;
+    top: 0;
+    left: 0;
+    background-image: url(img/Proyecto\ nuevo.jpg);
+    border-radius: 30px;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-color: #73321a;
+    margin-top: 120px;
+    margin-left: 300px;
+
+}
+.form input{
+    display: flex;
+    margin-top: 50px;
+    font-size: 20px;
+    width: 422px;
+    height: 26px;
+    background-color: #d9965b;
+}
+.boton input{
+    display: flex;
+    font-size: 30px;
+    width: 322px;
+    height: 66px;
+    background-color: #d9965b;
+    border-radius: 20px;
+    border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: #73321a;
+    text-align: center;
+    color: #ffffff;
+    justify-content: center;
+    margin-top: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    }
+    .boton input:hover{
+        background-color: #73321a;
+    }
+    .boton a{
+        text-decoration: none;
+    }
+    footer{
+        background-color: #d9965b;
+        text-align: center;
+    }
+footer img{
+        width: 20px;
+        margin: 10px;
+    }
