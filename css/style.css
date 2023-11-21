@@ -168,6 +168,53 @@ section{
     transition: 1s ease;
     transition-property: clip-path;
 }
+/* Inicio Landing */
+.fondo-1{
+    background:url(/img/landing.jpg)  no-repeat;
+    background-size: cover;
+}
+.landing{
+    color:#fff;
+    margin-top: 10vh;
+    width: 80vh;
+    font-size: 1.8em;
+    margin-left: -25vh;
+    display: flex;
+}
+.boton-1{
+   margin-top: 5%;
+   display: flex;
+   justify-content: center;
+   margin-right: 50%;
+}
+.boton-1 input{
+    width: 20vh;
+    height: 3vw;
+    color: #fff;
+    background: #73321A;
+    font-size: 0.8em;
+}
+.home-1 .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+    margin-top: 43vh;
+}
+.home-1 .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+.home-1 .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+.home-1 .media-icons a:hover{
+    transform: scale(1.3);
+}
+/* Fin Landing */
 @media  (max-width: 1040px ){
     header{
         padding: 12px 20px;
