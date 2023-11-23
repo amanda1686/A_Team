@@ -4,44 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
-<body>
-    <main>
+<body class="fondo-3">
         <header>
-            <img src="img/Kawaii Coffee.png" alt="logo" class="logo">
-            <h3>COFFEE</h3>
-            <nav>
-                <ul>
-                    <li><a href="file:///C:/Users/Administrator/Web_Ciber/landing/home/home.html#">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">SELECCIÓN</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <div class="cuadrado">
-                <form action="" class="form">
-                    <input type="text" name="" value="Nombre">
-                    <input type="email" name="" value="Emal">
-                    <input type="text" name="" value="Población">
-                    <div class="boton">
-                        <a href="file:///C:/Users/Administrator/Web_Ciber/landing/home/home.html#"><input type="submit" value="Enviar" required></a>
+            <a href="#" class="brand">A - Team</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+              <div class="navigation-items">
+                <a href="/home.html">HOME</a>
+                <a href="#">CONTACT</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">PRODUCTS</a>
+              </div>
+            </div>
+            <div class="home-3">
+                <div class="media-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+          </header>
+          <main>
+            <section>
+                <form action="" class="formulario" id="formulario">
+                    
+                    <div class="forulario__grupo" id="grupo__usuario">
+                            <label for="usuario" class="formulario__label">Usuario</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="John123">
+                                <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario debe tener de 4 a 16 dígitos y solo contener números, letras y guion bajo.</p>
+                    </div>
+
+                    <div class="forulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Jesus">
+                                <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario debe tener de 4 a 16 dígitos y solo contener números, letras y guion bajo.</p>
+                    </div>
+
+                    <div class="forulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario__label">Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password" id="password" placeholder="">
+                                <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña debe tener de 6 a 8 dígitos.</p>
+                    </div>
+
+                    <div class="forulario__grupo" id="grupo__password2">
+                        <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password2" id="password2" placeholder="">
+                                <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">Las contraseñas debn ser iguales.</p>
+                    </div>
+
+                    <div class="forulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                                <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">El correo debe contener letras, números, guiones y guion bajo.</p>
+                    </div>
+
+                    <div class="forulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono </label>
+                            <div class="formulario__grupo-input">
+                                <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="123456789">
+                                <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">El teléfono solo puedo contener número y el máximo de 14 dígitos.</p>
+                    </div>
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input type="checkbox" name="terminos" id="terminos" class="formulario__chekbox">Acepto los Términos y Condiciones.
+                        </label>
+                    </div>
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error:</b> Por favor rellene el formulario correctamente.</p>
+                    </div>
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado!</p>
                     </div>
                 </form>
-            </div>
-        </section>
-    </main>
+            </section>
+          </main>
     <footer>
-        <img src="../agradecimiento/img/instagram.svg" alt="">
-        <img src="../agradecimiento/img/x-twitter.svg" alt="">
-        <img src="../agradecimiento/img/facebook.svg" alt="">
-        <img src="../agradecimiento/img/pinterest.svg" alt="">
-
+        <script src="/js/js.js"></script>
     </footer>
 </body>
 </html>

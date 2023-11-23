@@ -277,6 +277,147 @@ h1{
     transform: scale(1.3);
 }
 /* F-Agradecimiento */
+
+/*I-Formulario */
+.fondo-3{
+    background:url(/img/pexels-viktoria-alipatova-2.jpg);
+    background-size: cover;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    padding: 60px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.formulario__label{
+    display: block;
+    padding: 3%;
+    cursor: pointer;
+}
+.formulario__grupo-input{
+    position: relative;
+}
+.formulario__input{
+    width: 70vh;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+.formulario__input:focus{
+    border: 3px solid #73321A;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(1, 1, 1, 0.5);
+}
+.formulario__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.formulario__input-error-activo{
+    display: block;
+}
+.formulario__validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formulario__checkbox{
+    margin-right: 5%;
+}
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar{
+    grid-column: span 2;
+}
+.formulario__mensaje{
+    height: 45px;
+    background: red;
+    padding: 13px 15px;
+    border-radius: 3px;
+    display: none;
+}
+.formulario__mensaje-activo{
+    display: block;
+}
+.formulario__grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario__btn{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #73321A;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    margin-bottom: 2%;
+}
+.formulario__btn:hover{
+    background-color: #BF6836;
+    color: #000;
+}
+.formulario__mensaje-exito{
+    display: none;
+    color: #119200;
+    }
+.formulario__mensaje-exito-activo{
+        display: block;
+    }
+.formulario__grupo-correcto 
+ .formulario__validacion-estado{
+        color: #1ed12d;
+        opacity: 1;
+    }
+    .formulario__grupo-incorrecto
+    .formulario__label{
+        color: red;
+    }
+    .formulario__grupo-incorrecto
+    .formulario__validacion-estado{
+        color: red;
+        opacity: 1;
+    }
+    .formulario__grupo-incorrecto
+    .formulario__input{
+        border: 3px solid red;
+    } 
+.home-3 .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+    margin-top: 43vh;
+}
+.home-3 .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+.home-3 .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+.home-3 .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+/* F-Formulario */
 @media  (max-width: 1024px ){
     header{
         padding: 12px 20px;
@@ -340,10 +481,24 @@ h1{
         height: 5vw;
 
     }
+    /* formulario */
+    .formulario{
+        grid-template-columns: 1fr;
+        width: 130vh;
+        justify-content: center;
+        margin-left: 15%;
+        height: 90vw;
+    }
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar{
+        grid-column: 1;
+    }
+    /* formulario */
 
 
 }
-@media  (max-width: 320px ){
+@media  (max-width: 880px ){
     .landing{
         width: 80vh;
         margin-left: 10%;
@@ -353,4 +508,18 @@ h1{
         height: 20vw;
 
     }
+        /* formulario */
+        .formulario{
+            grid-template-columns: 1fr;
+            width: 130vh;
+            justify-content: center;
+            margin-left: 15%;
+            height: 270vw;
+        }
+        .formulario__grupo-terminos,
+        .formulario__mensaje,
+        .formulario__grupo-btn-enviar{
+            grid-column: 1;
+        }
+        /* formulario */
 }
