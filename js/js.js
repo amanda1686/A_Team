@@ -1,3 +1,4 @@
+// carrusel
 const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".navigation");
 menuBtn.addEventListener("click",() => {
@@ -14,7 +15,7 @@ const nextSlide = () => {
     btns[currentSlide].classList.remove("active");
     slides[currentSlide].classList.remove("active");
     contents[currentSlide].classList.remove("active");
-    
+
     currentSlide = (currentSlide + 1) % slides.length;
 
     btns[currentSlide].classList.add("active");
@@ -50,3 +51,4 @@ btns.forEach((btn, i)=>{
     });
     
 });
+// carrusel
