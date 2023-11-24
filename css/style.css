@@ -495,10 +495,15 @@ h1{
         grid-column: 1;
     }
     /* formulario */
+    /* About_US */
+    .fondo-4{
+        background-color: #73321A;
+    }
+     /* About_US */
 
 
 }
-@media  (max-width: 880px ){
+@media  (min-width: 481px) and (max-width: 768px) {
     .landing{
         width: 80vh;
         margin-left: 10%;
