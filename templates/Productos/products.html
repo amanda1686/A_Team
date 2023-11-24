@@ -12,7 +12,7 @@
     <title>Products</title>
 </head>
 <body class="fondo-5">
-    <main>
+    <main class="medio">
         <header>
             <a href="/home.html" class="brand">A - Team</a>
             <div class="menu-btn"></div>
@@ -35,51 +35,57 @@
           <h1>Productos</h1>
         </section>
           <div class="galeria">
-              <div class="producto">
+              <div class="producto" id="producto1">
                   <img src="/img/chocolate.jpg" alt="Producto 1">
                   <div class="acciones">
-                      <button class="like-btn">Me gusta</button>
+                    <button class="like-btn" onclick="darLike('producto1')">Me gusta</button>
+                    <span class="contador" id="contadorProducto1">0</span>
                   </div>
               </div>
           
-              <div class="producto">
-                  <img src="/img/te_2.jpg" alt="Producto 2">
+              <div class="producto" id="producto2" >
+                  <img src="/img/capuccino.jpg"alt="Producto 2">
                   <div class="acciones">
-                      <button class="like-btn">Me gusta</button>
+                      <button class="like-btn" onclick="darLike('producto2')">Me gusta</button>
+            <span class="contador" id="contador2">0</span>
                   </div>
               </div>
 
-              <div class="producto">
-                <img src="/img/te_2.jpg" alt="Producto 2">
+              <div class="producto" id="producto3">
+                <img src="/img/coffee.jpg" alt="Producto 3">
                 <div class="acciones">
-                    <button class="like-btn">Me gusta</button>
+                    <button class="like-btn" onclick="darLike('producto3')">Me gusta</button>
+            <span class="contador" id="contador3">0</span>
                 </div>
             </div>
 
             <div class="producto">
-              <img src="/img/te_2.jpg" alt="Producto 2">
+              <img src="/img/img_3.jpg" alt="Producto 2">
               <div class="acciones">
-                  <button class="like-btn">Me gusta</button>
+                  <button class="like-btn" onclick="darLike('producto1')">Me gusta</button>
+            <span class="contador" id="contador1">0</span>
               </div>
           </div>
 
           <div class="producto">
-            <img src="/img/te_2.jpg" alt="Producto 2">
+            <img src="/img/img_4.jpg" alt="Producto 2">
             <div class="acciones">
-                <button class="like-btn">Me gusta</button>
+                <button class="like-btn" onclick="darLike('producto1')">Me gusta</button>
+            <span class="contador" id="contador1">0</span>
             </div>
         </div>
 
         <div class="producto">
-          <img src="/img/te_2.jpg" alt="Producto 2">
+          <img src="/img/img_1.jpg" alt="Producto 2">
           <div class="acciones">
-              <button class="like-btn">Me gusta</button>
+              <button class="like-btn" onclick="darLike('producto1')">Me gusta</button>
+            <span class="contador" id="contador1">0</span>
           </div>
       </div>
           
               <!-- Agrega más productos según sea necesario -->
           
           </div>
-          
+          <script src="/js/js.js"></script>
           </body>
 </html>

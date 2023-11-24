@@ -160,3 +160,17 @@ formulario.addEventListener('submit', (e) => {
 	}
 });
 // productos
+// Creamos un objeto para almacenar el contador de Me gusta para cada producto
+const likes = {
+    producto1: 0,
+    producto2: 0,
+	producto23: 0,
+    // Agrega más productos según sea necesario
+};
+
+// Función para incrementar el contador de Me gusta y actualizar la visualización
+function darLike(idProducto) {
+    likes[idProducto]++;
+    const contadorElement = document.getElementById(`contador${idProducto.slice(-1)}`);
+    contadorElement.textContent = likes[idProducto];
+}
