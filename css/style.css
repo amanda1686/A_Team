@@ -46,9 +46,6 @@ header .navigation .navigation-items a:before{
 header .navigation .navigation-items a:hover:before{
     width: 100%;
 }
-section{
-    padding: 100px 200px;
-}
 .home{
     position: relative;
     width: 100%;
@@ -57,6 +54,7 @@ section{
     justify-content: center;
     flex-direction: column;
     background: #BF6836;
+    padding: 100px 200px;
 }
 .home:before{
     z-index: 777;
@@ -418,11 +416,39 @@ h1{
 }
 
 /* F-Formulario */
+
+/* F-Formulario */
+/* About_us */
+.fondo-4{
+    background: url(/img/about-2.jpg);
+    color: #fff;
+}
+.us{
+    margin-top: 10%;
+}
+.about{
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 10px;
+    text-align: center;
+    width: 120vh;
+    margin-left: 50vh;
+    color: #000;
+}
+.us h3{
+    font-size: 2em;
+    padding: 2% 0;
+}
+section img{
+    width: 50vh;
+}
+/* About_us */
 @media  (max-width: 1024px ){
     header{
         padding: 12px 20px;
     }
-    section{
+    .home{
         padding: 100px 20px;
     }
     .home .media-icons{
@@ -495,15 +521,23 @@ h1{
         grid-column: 1;
     }
     /* formulario */
-    /* About_US */
-    .fondo-4{
-        background-color: #73321A;
+    /* about-us */
+    .us h1{
+        margin-top: 10%;
+        margin-left: 3%;
+        font-size: 2em;
     }
-     /* About_US */
+    .about{
+        width: 50%;
+        margin-left: 55vh;
+        height: 140vh;
+    }
+    /* about-us */
+
 
 
 }
-@media  (min-width: 481px) and (max-width: 768px) {
+@media  (min-width: 375px) and (max-width: 768px) {
     .landing{
         width: 80vh;
         margin-left: 10%;
@@ -526,5 +560,19 @@ h1{
         .formulario__grupo-btn-enviar{
             grid-column: 1;
         }
-        /* formulario */
+        /* formuario */
+        /* about-us */
+        .us h1{
+            margin-top: 22%;
+            font-size: 2em;
+        }
+        .about{
+            height: 50%;
+            width: 70%;
+            margin-left: 12%;
+        }
+        .about img{
+            width: 75%;
+        }
+        /* about-us */
 }
