@@ -174,10 +174,10 @@ header .navigation .navigation-items a:hover:before{
 }
 .landing{
     color:#73321A;
-    margin-top: 10vh;
+    margin-top: 30vh;
     width: 140vh;
     font-size: 1em;
-    margin-left: -40vh;
+    margin-left: 10vh;
     display: flex;
 }
 .boton-1{
@@ -434,21 +434,27 @@ header .navigation .navigation-items a:hover:before{
     margin-top: 10%;
 }
 .about{
-    padding: 34px;
+    padding: 24px;
     background: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
     border-radius: 10px;
     text-align: center;
-    width: 120vh;
+    text-align: justify;
+    width: 100vh;
     margin-left: 50vh;
     color: #000;
+    height: 76vh;
+}
+.us h1{
+    text-align: center;
+    margin-bottom: 2%;
 }
 .us h3{
     font-size: 2em;
     padding: 2% 0;
 }
 section img{
-    width: 50vh;
+    width: 40vh;
 }
 /* About_us */
 @media  (max-width: 1024px ){
