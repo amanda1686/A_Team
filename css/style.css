@@ -169,7 +169,7 @@ header .navigation .navigation-items a:hover:before{
 }
 /* Inicio Landing */
 .fondo-1{
-    background:url(/img/landing.jpg)  no-repeat;
+    background:url(/img/pexels-brigitte-tohm-171292_big.jpg);
     background-size: cover;
 }
 .landing{
@@ -199,7 +199,7 @@ header .navigation .navigation-items a:hover:before{
     display: flex;
     flex-direction: column;
     transition: 0.5s ease;
-    margin-top: 43vh;
+    margin-top: 3vh;
 }
 .home-1 .media-icons a{
     color: #fff;
@@ -265,7 +265,7 @@ header .navigation .navigation-items a:hover:before{
     display: flex;
     flex-direction: column;
     transition: 0.5s ease;
-    margin-top: 43vh;
+    margin-top: 13vh;
 }
 .home-2 .media-icons a{
     color: #fff;
@@ -546,17 +546,41 @@ section img{
         height: 140vh;
     }
     /* about-us */
+    /* landing */
+    .landing {
+        width: 80vw;
+        margin-left: 5vw;
+    }
+    .fondo-1{
+        height: 80vw;
+    }
+
+    .home-1 .media-icons {
+        margin-right: 20vh;
+    }
+
+    .descuento {
+        padding: 10px;
+    }
+    /* landing */
 
 
 
 }
 @media  (min-width: 375px) and (max-width: 768px) {
     .landing{
-        width: 80vh;
+        width: 43vh;
         margin-left: 10%;
     }
+    .fondo-1{
+        height: 380vw;
+    }
+    .home-1 .media-icons {
+        right: 10px;
+        margin-top: 20vh;
+    }
     .boton-1 input{
-        width: 30vh;
+        width: 20vh;
         height: 20vw;
 
     }
