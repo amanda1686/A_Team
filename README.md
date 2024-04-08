@@ -6,7 +6,8 @@ Este proyecto es una simple página web para una cafetería. Utiliza tecnología
 
 ☕🍪🥐☕🍪🥐☕🍪🥐☕🍪🥐☕🍪🥐☕🍪🥐
 
-https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd1e7f6b6-bd77-4016-920a-ef3943dfbb32%2F61216529-c614-47d6-a64d-060727abd31c%2FUntitled.png?table=block&id=b12b06ba-ff45-4953-b541-df4767a4346b&spaceId=d1e7f6b6-bd77-4016-920a-ef3943dfbb32&width=2000&userId=32c6b068-55dc-4b9c-b2ab-bd0781aefdf3&cache=v2
+![image](https://github.com/amanda1686/A_Team/assets/80174591/5fe8a594-859b-4816-a8e7-26233f82011f)
+
 ## Tecnologías
 
 - HTML: Utilizado para la estructura de la página web.
